@@ -1,0 +1,13 @@
+<view>
+  <view class='quan'>
+    <view class='quan-content' wx:for-items='{{coupons}}' wx:key="{{index}}" bindtap='gitCoupon'>
+    <view class='quan-money'>￥{{item.moneyMax}}元</view>
+    <view class='same'>{{item.name}}</view>
+    <view class='same'>满{{item.moneyHreshold}}元使用</view>
+    <view class='same'>
+    <text>领取{{item.dateEndDays}}天内有效</text>
+    <text class='float'>点击领取</text>
+    </view>
+    </view>
+  </view>
+</view>

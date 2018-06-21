@@ -1,0 +1,28 @@
+<view>
+  <view class='title'>商城新开张，优惠多多.</view>
+  <view class='client'>
+    尊敬的客户:
+  </view>
+  <view class='content'>
+    <view>商城新开张，快来下单哦！</view>
+    <view>1.单件包邮(秒杀除外)</view>
+    <view>2.每天发布6见秒杀商品</view>
+    <view>3.满返活动</view>
+    <view>A:满100元返10元券</view>
+    <view>B:满200元返25元券</view>
+    <view>C:满300元返40元券</view>
+    <view>消费累计满500元，返0元券哦！</view>
+  </view>
+  <view class='quan'>
+    <view class='quan-content' wx:for-items='{{coupons}}' wx:key="{{index}}" bindtap='gitCoupon'>
+    <view class='quan-money'>￥{{item.moneyMax}}元</view>
+    <view class='same'>{{item.name}}</view>
+    <view class='same'>满{{item.moneyHreshold}}元使用</view>
+    <view class='same'>
+    <text>领取{{item.dateEndDays}}天内有效</text>
+    <text class='float'>点击领取</text>
+
+    </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,46 @@
+/* pages/add-address/index.wxss */
+page{
+  background-color: #f5f4f9;
+  width: 100%;
+  height: 100%;
+  overflow-y: hidden;
+}
+.box{
+  width: 100%;
+  background-color: #fff;
+  margin-top: 20rpx;
+  font-size: 26rpx;
+}
+.lable{
+  display: flex;
+  height: 90rpx;
+  line-height: 90rpx;
+  border-bottom: 1px solid #e7e7e7;
+}
+.lable-left{
+  padding-left:  50rpx;
+
+}
+
+.lable-right{
+  padding-top: 20rpx;
+  padding-left:  30rpx;
+  width: 450rpx;
+}
+.btn{
+  width: 95%;
+  margin: 20rpx auto;
+  font-size: 26rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+.btn-green{
+  background-color: green;
+  color: #fff;
+}
+.btn-white{
+  background-color: white;
+}
+.address{
+   margin-top: -30rpx; 
+}

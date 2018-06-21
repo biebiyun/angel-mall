@@ -1,0 +1,62 @@
+<!--pages/me/me.wxml-->
+<view class='bg'>
+  <view class="con">
+    <view bindtap="bindViewTap" class="userinfo">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+  </view>
+  <view class='content'>
+    <view class='yue'>余额0元，冻结0元</view>
+    <view>
+      <view class='box-btn'>
+        <navigator url='../recharge/recharge' class='nav'>
+          <button type='primary' class='btn'>充值</button>
+        </navigator>
+        <navigator class='nav' url='../embody/embody'>
+          <button type='warn' loading='{{loading}}' class='btn'>提现</button>
+        </navigator>
+      </view>
+      <view class='current-score'>
+        <text>当前积分</text>
+        <button class='btn btn-qiandao' bindtap='qiandao'>每日签到</button>
+      </view>
+      <navigator url='../order-goods/index'>
+        <view class='dingdan'>
+          <text>我的订单</text>
+          <text class='zhixiang'> > </text>
+        </view>
+      </navigator>
+      <navigator url='../address/address'>
+        <view class='address'>
+          <text>我的收货地址</text>
+          <text class='zhixiang'> > </text>
+        </view>
+      </navigator>
+      <navigator url='../quan/quan'>
+        <view class='youhuiquan'>
+          <text>我的优惠券</text>
+          <text class='zhixiang'> > </text>
+        </view>
+      </navigator>
+      <view class='bindPhone'>
+        <button class='btn-add-one' bindtap='bindPhone' wx:if='{{btnStatus}}'>绑定手机号码</button>
+        <view wx:if='{{!btnStatus}}'>
+          <text>手机号:</text> {{phone}}</view>
+      </view>
+    </view>
+  </view>
+  <view class='about' bindtap='aboutUs'>
+    <text>关于我们</text>
+    <text class='zhixiang'> > </text>
+  </view>
+  <view wx:if='{{status}}'>
+    <button type='warn' class='layout' bindtap='layout'>退出</button>
+  </view>
+  <view wx:if='{{!status}}'>
+    <button type='warn' class='layout' bindtap='login'>登录</button>
+  </view>
+  <view class='introduce'>
+    <text>Powered By PeiPei</text>
+  </view>
+</view>

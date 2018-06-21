@@ -1,0 +1,88 @@
+<!--index.wxml-->
+<view class='bg'>
+  <view class='block'>
+    <swiper indicator-dots="{{indicatorDots}}" circular='{{circular}}' autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class='swiper'>
+      <block wx:for="{{imgUrls}}" wx:key='id'>
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" class='img' />
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="type-container">
+    <scroll-view class="type-navbar" scroll-x="true">
+      <view class="type-box" wx:for-items="{{categories}}" wx:key="id">
+        <view id="{{item.id}}" class="type-navbar-item {{activeCategoryId == item.id ? 'type-item-on' : ''}}" bindtap="tabClick">
+          {{item.name}}
+        </view> 
+      </view>
+    </scroll-view>
+  </view>
+  <navigator url='../notice/notice'>
+  <view class='notice'>
+    <text class='notice-gg'>公告:</text>
+    <text class='notice-lq'>点击领取购物券！</text>
+  </view>
+  </navigator>
+  <view class='goods-box'>
+    <view class='goods-content'>
+      <image src='../img/child/1.jpg' class='ima'></image>
+      <view class='good-title'>广袖流仙裙</view>
+      <view class='price'>价格:￥269</view>
+    </view>
+    <view class='goods-content'>
+      <image src='../img/child/2.jpg' class='ima'></image>
+      <view class='good-title'>女童休闲服</view>
+      <view class='price'>价格:￥189</view>
+    </view>
+    <view class='goods-content'>
+      <image src='../img/child/3.jpg' class='ima'></image>
+      <view class='good-title'>舒适格子衫男童</view>
+      <view class='price'>价格:￥129</view>
+    </view>
+    <view class='goods-content'>
+      <image src='../img/child/4.jpg' class='ima'></image>
+      <view class='good-title'>时尚帆船帽</view>
+      <view class='price'>价格:￥89</view>
+    </view>
+    <view class='goods-content'>
+      <image src='../img/child/5.jpg' class='ima'></image>
+      <view class='good-title'>清新连衣裙</view>
+      <view class='price'>价格:￥169</view>
+    </view>
+    <view class='goods-content'>
+      <image src='../img/child/6.jpg' class='ima'></image>
+      <view class='good-title'>清新连衣裙</view>
+      <view class='price'>价格:￥169</view>
+    </view>
+    <view class='goods-content'>
+      <image src='../img/child/7.jpg' class='ima'></image>
+      <view class='good-title'>清新连衣裙</view>
+      <view class='price'>价格:￥169</view>
+    </view>
+    <view class='goods-content'>
+      <image src='../img/child/8.jpg' class='ima'></image>
+      <view class='good-title'>清新连衣裙</view>
+      <view class='price'>价格:￥169</view>
+    </view>
+    <view class='goods-content'>
+      <image src='../img/child/9.jpg' class='ima'></image>
+      <view class='good-title'>男童牛仔裤</view>
+      <view class='price'>价格:￥99</view>
+    </view>
+     <view class='goods-content'>
+      <image src='../img/child/10.jpg' class='ima'></image>
+      <view class='good-title'>男童牛仔裤</view>
+      <view class='price'>价格:￥99</view>
+    </view>
+  </view> 
+  <view class='goods-box add'>
+   <view class='goods-content' wx:for-items="{{goods}}" wx:key="{{index}}">
+      <image src='{{item.pic}}_m' class='ima'></image>
+      <view class='good-title'>{{item.name}}</view>
+      <view class='price'>价格:￥{{item.minPrice}}</view>
+    </view>
+
+  </view>
+
+</view>

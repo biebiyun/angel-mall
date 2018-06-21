@@ -1,0 +1,12 @@
+<view class='box'>
+  <view class='shuru'>
+    <view class='label-left'>提现金额:</view>
+    <view class='label-right'>
+      <input class='input' name='money' bindinput='getMoney' placeholder="请输入提现的金额" auto-focus/>
+    </view>
+  </view>
+  <view class='btn-section'>
+    <button type='warn' class='btn' bindtap='confirm' loading='{{loading}}'>{{content}}</button>
+    <button class='cancle' bindtap='cancle'>取消</button>
+  </view>
+</view>

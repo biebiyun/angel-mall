@@ -1,0 +1,9 @@
+<!--pages/select-address/index.wxml-->
+<navigator url='../add-address/index'>
+<view class='box'>
+<icon type='success'  class='left'></icon>
+<view class='name'>{{name}}</view>
+<view class='address'>{{address}}</view>
+<icon type='info'  class='right'></icon>
+</view>
+</navigator>

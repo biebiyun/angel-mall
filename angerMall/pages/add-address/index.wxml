@@ -1,0 +1,44 @@
+<!--pages/add-address/index.wxml-->
+<view class='box'>
+  <view class='lable'>
+    <view class='lable-left'>联系人:</view>
+    <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;</text>
+    <view class='lable-right'>
+      <input placeholder='联系人姓名' class='input' name='username' bindinput='userName'></input>
+    </view>
+  </view>
+  <view class='lable'>
+    <view class='lable-left'>手机号码:</view>
+    <view class='lable-right'>
+      <input placeholder='请输入手机号码' name='userphone' bindinput='userPhone'></input>
+    </view>
+  </view>
+  <view class='lable' bindtap='getLocation'>
+    <view class='lable-left'>选择地址:</view>
+    <view class='lable-right select'>
+      <view class='address'>{{name}}</view>
+    </view>
+  </view>
+  <view class='lable'>
+    <view class='lable-left'>详细地址:</view>
+    <view class='lable-right'>
+      <input placeholder='街道门牌信息' name='addressinfo' bindinput='getAddress'></input>
+    </view>
+  </view>
+  <view class='lable'>
+    <view class='lable-left'>邮政编号:</view>
+    <view class='lable-right'>
+      <input placeholder='请输入邮政编号' name='ems' bindinput='getEms'></input>
+    </view>
+  </view>
+
+</view>
+<view>
+  <button class='btn' type='warn' bindtap='save'>保存</button>
+  <navigator url='../select-address/index'>
+    <button class='btn btn-green'>从微信读取</button>
+  </navigator>
+  <navigator url='../address/address'>
+    <button class='btn btn-white'>取消</button>
+  </navigator>
+</view>

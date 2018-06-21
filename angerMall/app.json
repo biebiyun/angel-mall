@@ -1,0 +1,57 @@
+{
+  "pages": [
+ 
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/login/login",
+    "pages/me/me",
+    "pages/discovery/discovery",
+    "pages/quan/quan",
+    "pages/notice/notice",
+    "pages/recharge/recharge",
+    "pages/embody/embody",
+    "pages/address/address",
+    "pages/select-address/index",
+    "pages/add-address/index",
+    "pages/order-goods/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "天使童装",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#6e6d6b",
+    "selectedColor": "#e64340",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "box-shadow": "0 0 6px 0",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/img/nav/home-off.png",
+        "selectedIconPath": "pages/img/nav/home-on.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志",
+        "iconPath": "pages/img/nav/order-off.png",
+        "selectedIconPath": "pages/img/nav/order-on.png"
+      },
+      {
+        "pagePath": "pages/discovery/discovery",
+        "text": "购物",
+        "iconPath": "pages/img/nav/cart-off.png",
+        "selectedIconPath": "pages/img/nav/cart-on.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "pages/img/nav/my-off.png",
+        "selectedIconPath": "pages/img/nav/my-on.png"
+      }
+    ]
+  }
+}

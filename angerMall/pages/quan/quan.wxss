@@ -1,0 +1,43 @@
+/* pages/quan.wxss */
+/* pages/notice/notice.wxss */
+
+.title {
+  text-align: center;
+  font-size: 35rpx;
+  color: chocolate;
+}
+
+.content {
+  font-size: 26rpx;
+  line-height: 50rpx;
+  text-indent: 10rpx;
+  margin-top: 40rpx;
+  color: gold;
+}
+
+.client {
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  text-indent: 10rpx;
+}
+.quan{
+  width: 100%;
+  margin:50rpx 0;
+}
+.quan-content{
+  width: 80%;
+  height: 200rpx;
+  background-color: #f1a83b;
+  margin: 30rpx auto;
+  color: #fff;
+  text-indent: 35rpx;
+}
+.same{
+  font-size: 25rpx;
+  line-height: 45rpx;
+}
+.float{
+  float: right;
+  padding-right: 50rpx;
+  cursor: pointer;
+}

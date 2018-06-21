@@ -1,0 +1,51 @@
+/* pages/recharge/recharge.wxss */
+page{
+  background-color: #f5f5f9;
+}
+.box {
+  height: 1200rpx;
+  font-size: 28rpx;
+  margin-top: 30rpx;
+}
+
+.label-left {
+  padding-left: 20rpx;
+}
+
+.label-right {
+  line-height: 40px;
+}
+
+.input {
+  display: block;
+  padding-top: 15rpx;
+  padding-left: 20rpx;
+  width: 500rpx;
+}
+
+.shuru {
+  background-color: #fff;
+  display: flex;
+  line-height: 80rpx;
+}
+
+.btn {
+  width: 80%;
+  font-size: 28rpx;
+  line-height: 75rpx;
+  margin-top: 80rpx;
+}
+
+.cancle {
+  width: 80%;
+  font-size: 28rpx;
+  line-height: 75rpx;
+  margin-top: 30rpx;
+}
+.content{
+  color: red;
+  margin-top: 30rpx;
+  padding-left: 30rpx;
+  line-height: 50rpx;
+
+}

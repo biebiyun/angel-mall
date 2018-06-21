@@ -1,0 +1,22 @@
+<view class='box'>
+  <view class='shuru'>
+    <view class='label-left'>充值金额:</view>
+    <view class='label-right'>
+      <input class='input' name='money' bindinput='getMoney' placeholder="请输入充值的金额" auto-focus/>
+    </view>
+  </view>
+  <view class='btn-section'>
+    <button type='warn' class='btn' bindtap='confirm' loading='{{loading}}'>{{content}}</button>
+    <button class='cancle' bindtap='cancle'>取消</button>
+  </view>
+  <!--以下方式  充值  -->
+  <view class='content'>
+  <view>
+  您也可以通过拨打客服热线进行充值.
+  </view>
+  <view>
+  <text>客服热线:</text>
+  <text>400-800-120-1820</text>
+  </view>
+  </view>
+</view>

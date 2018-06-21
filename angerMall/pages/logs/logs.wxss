@@ -1,0 +1,8 @@
+.btn{
+  display: inline-block;
+  width: 300rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  text-align: center;
+  margin: 150rpx;
+}
